@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700|Handlee" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jv-jquery-mobile-menu.css">
     <link rel="stylesheet" href="css/main.css">
     <title>The Leaky Cauldron | Universal Studios Orlando</title>
 </head>
@@ -14,6 +15,25 @@
         <header>
             <h1 class="visuallyhidden">Navigation</h1>
             <nav>
+                <div class="hamburger">
+                    <div class="hamburger-inner">
+                        <div class="bar bar1 hide"></div>
+                        <div class="bar bar2 cross"></div>
+                        <div class="bar bar3 cross hidden"></div>
+                        <div class="bar bar4 hide"></div>
+                    </div>
+                </div>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-inner">
+                        <ul>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Works</li>
+                            <li>Showcase</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.htnl">Menu</a></li>
@@ -29,6 +49,9 @@
         </header>
     </div>
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="js/jv-jquery-mobile-menu-min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
