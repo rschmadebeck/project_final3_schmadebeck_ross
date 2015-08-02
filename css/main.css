@@ -121,3 +121,33 @@ h1 {
     margin: auto;
     min-height: 135px;
 }
+
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 24pt;
+    color: #4E1616;
+    margin-bottom: -10px;
+    margin-top: 0px;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 14pt;
+    color: #5F3309;
+    line-height: 18pt;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #011053;
+}
+
+section {
+    margin-top: 5px;
+}
+
+#hours_contact {
+    text-align: center;
+}
