@@ -144,6 +144,10 @@ a {
     color: #011053;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .hours {
   display:none;
 }
@@ -196,6 +200,7 @@ label {
 input {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 250px;
 }
 
 .button {
@@ -206,10 +211,6 @@ input {
     padding: 15px 15px 15px 15px;
     color: #FFFFFF;
     text-decoration: none;
-}
-
-input.submit {
-    text-align: center;
 }
 
 a:hover.button {
@@ -236,7 +237,7 @@ footer p {
     background-repeat: no-repeat;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
 
     body {
         width: 90%;
@@ -244,10 +245,20 @@ footer p {
         margin: auto;
     }
 
-    #hours_contact, #dishofday, #reservations {
-    width: 45%;
+    #hours_contact, #dishofday {
+    width: 50%;
     text-align: left;
     float: left;
+    }
+
+    #reservations {
+        clear: both;
+    }
+
+    #resform, #reservations p {
+        width: 45%;
+        float: left;
+        line-height: 24pt;
     }
 
     h2 {

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700|Handlee" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="css/jv-jquery-mobile-menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>The Leaky Cauldron - Menu | Universal Studios Orlando</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1 class="visuallyhidden">Navigation</h1>
+            <nav>
+                <div class="hamburger">
+                    <div class="hamburger-inner">
+                        <div class="bar bar1 hide"></div>
+                        <div class="bar bar2 cross"></div>
+                        <div class="bar bar3 cross hidden"></div>
+                        <div class="bar bar4 hide"></div>
+                    </div>
+                </div>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-inner">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.htnl">Menu</a></li>
+                            <li><a href="news.html">News &amp; Awards</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1>The Leaky Cauldron Menu</h1>
+            <div id="logo">
+                <figure>
+                    <img src="img/logo.jpg" title="The Leaky Cauldron Logo" alt="The Leaky Cauldron Logo" />
+                </figure>
+            </div>
+        </header>
+        <section id="general_info">
+            <h1 class="visuallyhidden">General Information</h1>
+            <article id="hours_contact">
+                <p class="hours openstatus">We are currently: <span class="open">OPEN</span></p>
+                <p class="closed openstatus">We are currently: <span class="closed">CLOSED</span</p>
+            </article>
+            <article id="dishofday">
+                <h2>Dish of the Day</h2>
+                <figure>
+                    <img src="img/fishandchips.jpg" title="Dish of the Day" alt="Dish of the Day" />
+                    <figcaption>Fish and Chips > <span class="price">$9.99</span></figcaption>
+                </figure>
+            </article>
+            <article id="reservations">
+                <h2>Reservations</h2>
+                <form action="post" id="resform">
+                    <fieldset>
+                        <legend>Make a Reservation:</legend>
+                        <label>Name: </label><input type="text" name="name"><br />
+                        <label>Phone: </label><input type="text" name="phone"><br />
+                        <label>Email: </label><input type="email" name="email"><br />
+                        <label>Time: </label><input list="times" name="time">
+                        <datalist id="times">
+                            <option value="11:00 am">
+                            <option value="11:30 am">
+                            <option value="12:00 pm">
+                            <option value="12:30 pm">
+                            <option value="1:00 pm">
+                            <option value="1:30 pm">
+                            <option value="2:00 pm">
+                            <option value="2:30 pm">
+                            <option value="3:00 pm">
+                            <option value="3:30 pm">
+                            <option value="4:00 pm">
+                            <option value="4:30 pm">
+                            <option value="5:00 pm">
+                            <option value="5:30 pm">
+                            <option value="6:00 pm">
+                            <option value="6:30 pm">
+                            <option value="7:00 pm">
+                            <option value="7:30 pm">
+                            <option value="8:00 pm">
+                            <option value="8:30 pm">
+                            <option value="9:00 pm">
+                            <option value="9:30 pm">
+                            <option value="10:00 pm">
+                            <option value="10:30 pm">
+                        </datalist><br />
+                        <input type="submit" class="button">
+                    </fieldset>
+                </form>
+                <p>Call <a href="tel:407.555.5555">407.555.5555</a> or send an email to <a href="#">info@theleakycauldron.com</a></p>
+            </article>
+        </section>
+        <footer>
+            <p>&copy; Copyright Ross Schmadebeck <br />This site is for educational purposes only and is not intended for commercial use or distribution. Created for MMC6278.</p>
+        </footer>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="js/jv-jquery-mobile-menu-min.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
