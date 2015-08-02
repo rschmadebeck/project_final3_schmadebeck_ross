@@ -45,15 +45,17 @@
             <article id="hours_contact">
                 <h2>Hours of Operation</h2>
                 <p>Open Daily <br /><time>11:00</time> a.m. to <time>11:00</time> p.m.</p>
+                <p class="hours openstatus">We are currently: <span class="open">OPEN</span></p>
+                <p class="closed openstatus">We are currently: <span class="closed">CLOSED</span</p>
                 <p>1 Diagon Alley<br />London, England</p>
-                <p>407.555.5555<br /> <a href="#">info@leakycauldron.com</a></p>
+                <p><a href="tel:407.555.5555">407.555.5555</a> <br /> <a href="#">info@leakycauldron.com</a></p>
                 <p>Follow us:<br /> <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> </p>
             </article>
             <article id="dishofday">
                 <h2>Dish of the Day</h2>
                 <figure>
                     <img src="img/fishandchips.jpg" title="Dish of the Day" alt="Dish of the Day" />
-                    <figcaption>Fish and Chips > $9.99</figcaption>
+                    <figcaption>Fish and Chips > <span class="price">$9.99</span></figcaption>
                 </figure>
             </article>
             <article id="reservations">
@@ -94,7 +96,7 @@
                         <input type="submit" class="button">
                     </fieldset>
                 </form>
-                <p>Call 407.555.5555 or send an email to <a href="#">info@theleakycauldron</a></p>
+                <p>Call <a href="tel:407.555.5555">407.555.5555</a> or send an email to <a href="#">info@theleakycauldron.com</a></p>
             </article>
         </section>
         <footer>
@@ -105,6 +107,7 @@
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="js/jv-jquery-mobile-menu-min.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

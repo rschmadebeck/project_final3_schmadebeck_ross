@@ -1,8 +1,8 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
@@ -115,7 +115,7 @@ h1 {
 
 /* Hamburger Nav End */
 
-#logo img {
+img {
     border: 1px solid black;
     width: 100%;
     margin: auto;
@@ -144,6 +144,20 @@ a {
     color: #011053;
 }
 
+.hours {
+  display:none;
+}
+
+.open {
+    color: #252525;
+    font-weight: 700;
+}
+
+.closed {
+    color: #4E1616;
+    font-weight: 700;
+}
+
 section {
     margin-top: 5px;
 }
@@ -156,8 +170,14 @@ figcaption {
     font-size: 10pt;
 }
 
+.price {
+    font-weight: 700;
+    font-style: italic;
+}
+
 #hours_contact, #dishofday, #reservations {
     text-align: center;
+    padding: 10px;
 }
 
 fieldset {
@@ -188,6 +208,10 @@ input {
     text-decoration: none;
 }
 
+input.submit {
+    text-align: center;
+}
+
 a:hover.button {
     background-color: #5F3309;
     font-family: 'Lora', serif;
@@ -202,4 +226,35 @@ footer p {
     font-size: 8pt;
     line-height: 10pt;
     text-align: center;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    padding: 20px 20px;
+    background: url(../img/top.png);
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 700px) {
+
+    body {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #hours_contact, #dishofday, #reservations {
+    width: 45%;
+    text-align: left;
+    float: left;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        clear: both;
+    }
 }

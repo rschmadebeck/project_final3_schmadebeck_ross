@@ -1,15 +1,5 @@
 //Hamburger Nav JS
 
-// (function ($) {
-
-//     $('body').jvmobilemenu({
-//         notMenuClick: $('.page'),
-//         slideSpeed: 0.3,
-//         menuWidth: 240
-//     });
-
-// })(jQuery);
-
 $.jvmobilemenu({
     mainContent: $('.page'),
     theMenu: $('.mobile-nav'),
@@ -19,15 +9,50 @@ $.jvmobilemenu({
     menuPadding: '20px 20px 60px'
 });
 
-// $('body').jvmobilemenu({
+// Open Closed jQuery
 
-// // selector to click outside menu to close
-// notMenuClick: $('.page'),
+var d = new Date();
+var hour = d.getHours();
+var mins = d.getMinutes();
+var status = 'open';
 
-// // speed to open and close menu
-// slideSpeed: 0.3,
+if ( hour <= 23){
+    if (hour=='11' && mins < '00'){
+        status = 'closed';
+    }else if (hour=='23' && mins > '00'){
+        status = 'closed';
+    }else{
+        status = 'open';
+    }
+}else{
+    status = 'closed';
+}
 
-// // width of the mobile menu
-// menuWidth: 240
+if (status=='open') {
+    $('.hours').show();
+    $('.closed').hide();
+}else{
+    $('.hours').hide();
+    $('.closed').show();
+}
 
-// });
+//ScrollUp jQuery
+
+$(function () {
+    $.scrollUp({
+        scrollName: 'scrollUp',      // Element ID
+        scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+        scrollFrom: 'top',           // 'top' or 'bottom'
+        scrollSpeed: 300,            // Speed back to top (ms)
+        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+        animation: 'fade',           // Fade, slide, none
+        animationSpeed: 200,         // Animation speed (ms)
+        scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+        scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+        scrollText: 'Scroll to top', // Text for element, can contain HTML
+        scrollTitle: false,          // Set a custom <a> title if required.
+        scrollImg: true,            // Set true to use image
+        activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        zIndex: 2147483647           // Z-Index for the overlay
+    });
+});
