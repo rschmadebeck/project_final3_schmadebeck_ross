@@ -131,7 +131,7 @@ h2 {
     margin-top: 0px;
 }
 
-p {
+p, figcaption {
     font-family: 'Lora', serif;
     font-size: 14pt;
     color: #5F3309;
@@ -148,6 +148,14 @@ section {
     margin-top: 5px;
 }
 
-#hours_contact {
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 10pt;
+}
+
+#hours_contact, #dishofday {
     text-align: center;
 }
