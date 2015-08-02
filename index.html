@@ -54,8 +54,47 @@
                 <figure>
                     <img src="img/fishandchips.jpg" title="Dish of the Day" alt="Dish of the Day" />
                     <figcaption>Fish and Chips > $9.99</figcaption>
-                </fingure>
+                </figure>
             </article>
+            <article id="reservations">
+                <h2>Reservations</h2>
+                <form action="post" id="resform">
+                    <fieldset>
+                        <legend>Make a Reservation:</legend>
+                        <label>Name: </label><input type="text" name="name"><br />
+                        <label>Phone: </label><input type="text" name="phone"><br />
+                        <label>Email: </label><input type="email" name="email"><br />
+                        <label>Time: </label><input list="times" name="time">
+                        <datalist id="times">
+                            <option value="11:00 am">
+                            <option value="11:30 am">
+                            <option value="12:00 pm">
+                            <option value="12:30 pm">
+                            <option value="1:00 pm">
+                            <option value="1:30 pm">
+                            <option value="2:00 pm">
+                            <option value="2:30 pm">
+                            <option value="3:00 pm">
+                            <option value="3:30 pm">
+                            <option value="4:00 pm">
+                            <option value="4:30 pm">
+                            <option value="5:00 pm">
+                            <option value="5:30 pm">
+                            <option value="6:00 pm">
+                            <option value="6:30 pm">
+                            <option value="7:00 pm">
+                            <option value="7:30 pm">
+                            <option value="8:00 pm">
+                            <option value="8:30 pm">
+                            <option value="9:00 pm">
+                            <option value="9:30 pm">
+                            <option value="10:00 pm">
+                            <option value="10:30 pm">
+                        </datalist><br />
+                        <input type="submit" class="button">
+                    </fieldset>
+                </form>
+                <p>Call 407.555.5555 or send an email to <a href="#">info@theleakycauldron</a></p>
             </article>
         </section>
     </div>

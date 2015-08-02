@@ -127,11 +127,11 @@ h2 {
     font-weight: 700;
     font-size: 24pt;
     color: #4E1616;
-    margin-bottom: -10px;
+    margin-bottom: 0px;
     margin-top: 0px;
 }
 
-p, figcaption {
+p, figcaption, legend, label {
     font-family: 'Lora', serif;
     font-size: 14pt;
     color: #5F3309;
@@ -156,6 +156,39 @@ figcaption {
     font-size: 10pt;
 }
 
-#hours_contact, #dishofday {
+#hours_contact, #dishofday, #reservations {
     text-align: center;
+}
+
+fieldset {
+    text-align: left;
+}
+
+label {
+    font-weight: 700;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: #7D4900;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 14pt;
+    padding: 15px 15px 15px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover.button {
+    background-color: #5F3309;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 14pt;
+    padding: 15px 15px 15px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
