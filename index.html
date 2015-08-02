@@ -7,6 +7,7 @@
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700|Handlee" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/jv-jquery-mobile-menu.css">
+    <link rel="stylesheet" href="css/jquery.datepick.css">
     <link rel="stylesheet" href="css/main.css">
     <title>The Leaky Cauldron | Universal Studios Orlando</title>
 </head>
@@ -66,7 +67,8 @@
                         <label>Name: </label><input type="text" name="name"><br />
                         <label>Phone: </label><input type="text" name="phone"><br />
                         <label>Email: </label><input type="email" name="email"><br />
-                        <label>Time: </label><input list="times" name="time">
+                        <label>Date: </label><input type="text" name="date" id="popupDatepicker"><br />
+                        <label>Time: </label><input list="times" name="time"><br />
                         <datalist id="times">
                             <option value="11:00 am">
                             <option value="11:30 am">
@@ -108,6 +110,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="js/jv-jquery-mobile-menu-min.js"></script>
     <script src="js/jquery.scrollUp.js"></script>
+    <script src="js/jquery.plugin.min.js"></script>
+    <script src="js/jquery.datepick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

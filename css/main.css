@@ -127,11 +127,11 @@ h2 {
     font-weight: 700;
     font-size: 24pt;
     color: #4E1616;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-top: 0px;
 }
 
-p, figcaption, legend, label {
+p, legend, label, ul, li {
     font-family: 'Lora', serif;
     font-size: 14pt;
     color: #5F3309;
@@ -166,12 +166,19 @@ section {
     margin-top: 5px;
 }
 
-figure {
-    text-align: center;
+figcaption {
+    font-family: 'Lora', serif;
+    font-size: 10pt;
+    text-align: left;
+    color: #5F3309;
+    line-height: 12pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
 }
 
-figcaption {
-    font-size: 10pt;
+.menutitle, label {
+    font-weight: 700;
 }
 
 .price {
@@ -179,9 +186,14 @@ figcaption {
     font-style: italic;
 }
 
-#hours_contact, #dishofday, #reservations {
+#hours_contact, #currentstatus, #dishofday, #reservations, #dishofday_content, #appetizers, #entrees, #desserts, #beverages {
     text-align: center;
     padding: 10px;
+}
+
+#beverages {
+    text-align: left;
+    clear: both;
 }
 
 fieldset {
@@ -191,10 +203,6 @@ fieldset {
 legend {
     font-weight: 700;
     padding: 10px;
-}
-
-label {
-    font-weight: 700;
 }
 
 input {
@@ -259,6 +267,20 @@ footer p {
         width: 45%;
         float: left;
         line-height: 24pt;
+    }
+
+    #dishofday_content {
+        padding: 5px;
+    }
+
+    #appetizers, #entrees, #desserts {
+        width: 32%;
+        float: left;
+        padding-left: 15px;
+    }
+
+    .quicklinks {
+        display: none;
     }
 
     h2 {

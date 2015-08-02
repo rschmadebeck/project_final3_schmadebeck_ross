@@ -56,3 +56,12 @@ $(function () {
         zIndex: 2147483647           // Z-Index for the overlay
     });
 });
+
+//DatePicker jQuery
+
+$('#popupDatepicker').datepick({minDate: 1});
+
+
+function showDate(date) {
+    alert('The date chosen is ' + date);
+}
