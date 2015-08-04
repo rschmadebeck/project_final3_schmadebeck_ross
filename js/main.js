@@ -9,7 +9,7 @@ $.jvmobilemenu({
     menuPadding: '20px 20px 60px'
 });
 
-$(window).resize(function(){
+$(window).resize(function (){
     var h = $('.hamburger');
     var width = $(window).width();
     var content = $('#content').width();
@@ -20,7 +20,7 @@ $(window).resize(function(){
 });
 
 $('.hamburger').click(function(){
-    var h = $(this);
+    var h = $('.hamburger');
     if (h.hasClass('open'))
         h.css('right',0);
     else
