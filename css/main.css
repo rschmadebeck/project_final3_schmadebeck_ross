@@ -62,6 +62,7 @@ h1 {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    z-index: 999999;
 }
 
 .hamburger .bar {
@@ -73,29 +74,48 @@ h1 {
 }
 
 .hamburger .bar.bar2,
-.hamburger .bar.bar3 { top: 9px; }
+.hamburger .bar.bar3 {
+    top: 9px;
+}
 
-.hamburger .bar.bar4 { top: 18px; }
+.hamburger .bar.bar4 {
+    top: 18px;
+}
 
 .hamburger.open .bar1,
-.hamburger.open .bar4 { display: none; }
+.hamburger.open .bar4 {
+    display: none;
+}
 
 .hamburger.open .bar2,
-.hamburger.open .bar3 { height: 4px; }
+.hamburger.open .bar3 {
+    height: 4px;
+}
+
+.hamburger.open .bar {
+    background-color: #FFFFFF!important;
+}
 
 .mobile-menu {
+    display: none;
+}
+
+.hamburger.open .mobile-menu {
     position: fixed;
     top: 0;
     right: 0;
-    opacity: 0;
     display: block;
     width: 240px;
     height: 100%;
     color: #fff;
-    background-color: #7D4900;
-    z-index: -100;
+    background-color: #011053;
+    z-index: 99998;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+}
+
+.mobile-menu a {
+    color: #FFFFFF;
 }
 
 .mobile-menu .mobile-menu-inner {
@@ -152,12 +172,12 @@ a:hover {
   display:none;
 }
 
-.open {
-    color: #252525;
+.opentime {
+    color: green;
     font-weight: 700;
 }
 
-.closed {
+.closedtime {
     color: #4E1616;
     font-weight: 700;
 }
@@ -209,6 +229,11 @@ input {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 250px;
+}
+
+label {
+    display: inline-block;
+    width: 4em;
 }
 
 .button {

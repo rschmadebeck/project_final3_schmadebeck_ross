@@ -9,6 +9,30 @@ $.jvmobilemenu({
     menuPadding: '20px 20px 60px'
 });
 
+$(window).resize(function(){
+    var h = $('.hamburger');
+    var width = $(window).width();
+    var content = $('#content').width();
+    if (width >=800)
+        h.css('right', (width - content)/2);
+    else
+        h.css('right', 0);
+});
+
+$('.hamburger').click(function(){
+    var h = $(this);
+    if (h.hasClass('open'))
+        h.css('right',0);
+    else
+        $(window).resize();
+});
+
+$(document).ready(function () { $(window).resize(); });
+
+$( '.mobile-menu a' ).click( function() {
+    window.location=$(this).attr('href');
+});
+
 // Open Closed jQuery
 
 var d = new Date();

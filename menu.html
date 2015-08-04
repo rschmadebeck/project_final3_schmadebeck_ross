@@ -7,6 +7,7 @@
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700|Handlee" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/jv-jquery-mobile-menu.css">
+    <link rel="stylesheet" href="css/jquery.datepick.css">
     <link rel="stylesheet" href="css/main.css">
     <title>The Leaky Cauldron - Menu | Universal Studios Orlando</title>
 </head>
@@ -22,14 +23,14 @@
                         <div class="bar bar3 cross hidden"></div>
                         <div class="bar bar4 hide"></div>
                     </div>
-                </div>
-                <div class="mobile-menu">
-                    <div class="mobile-menu-inner">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="menu.htnl">Menu</a></li>
-                            <li><a href="news.html">News &amp; Awards</a></li>
-                        </ul>
+                    <div class="mobile-menu">
+                        <div class="mobile-menu-inner">
+                            <ul>
+                                <li><a href="index.html" onClick="window.location='index.html'">Home</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="news.html">News &amp; Awards</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -44,8 +45,8 @@
             <h1 class="visuallyhidden">Menu Categories</h1>
             <article id="currentstatus">
                 <p class="quicklinks"><a href="#appetizers">Appetizers</a> | <a href="#entrees">Entrees</a> | <a href="#desserts">Desserts</a> | <a href="#beverages">Beverages</a></p>
-                <p class="hours openstatus">We are currently: <span class="open">OPEN</span></p>
-                <p class="closed openstatus">We are currently: <span class="closed">CLOSED</span</p>
+                <p class="hours openstatus">We are currently: <span class="opentime">OPEN</span></p>
+                <p class="closed openstatus">We are currently: <span class="closedtime">CLOSED</span</p>
             </article>
             <article id="dishofday_content">
                 <h2>Dish of the Day</h2>
@@ -120,6 +121,7 @@
                         <label>Name: </label><input type="text" name="name"><br />
                         <label>Phone: </label><input type="text" name="phone"><br />
                         <label>Email: </label><input type="email" name="email"><br />
+                        <label>Date: </label><input type="text" name="date" id="popupDatepicker"><br />
                         <label>Time: </label><input list="times" name="time">
                         <datalist id="times">
                             <option value="11:00 am">
@@ -162,6 +164,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="js/jv-jquery-mobile-menu-min.js"></script>
     <script src="js/jquery.scrollUp.js"></script>
+    <script src="js/jquery.plugin.min.js"></script>
+    <script src="js/jquery.datepick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
