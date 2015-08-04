@@ -287,6 +287,7 @@ footer p {
 }
 
 @media (min-width: 400px) {
+
     h1 {
         padding-top: 25px;
     }
@@ -305,9 +306,22 @@ footer p {
     }
 
     #hours_contact, #dishofday {
-    width: 50%;
-    text-align: left;
-    float: left;
+        width: 50%;
+        text-align: left;
+        float: left;
+    }
+
+    #appetizers, #entrees, #desserts, {
+        width: 32%;
+        float: left;
+        padding-left: 15px;
+    }
+
+    #newsitems, #events, #specials {
+        width: 33%;
+        float: left;
+        padding-left: 15px;
+        clear: none;
     }
 
     #reservations {
@@ -322,19 +336,6 @@ footer p {
 
     #dishofday_content {
         padding: 5px;
-    }
-
-    #appetizers, #entrees, #desserts, {
-        width: 32%;
-        float: left;
-        padding-left: 15px;
-    }
-
-    #newsitems, #events, #specials {
-        width: 33%;
-        float: left;
-        padding-left: 15px;
-        clear: none;
     }
 
     .quicklinks {
