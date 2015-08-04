@@ -311,7 +311,7 @@ footer p {
         float: left;
     }
 
-    #appetizers, #entrees, #desserts, {
+    #appetizers, #entrees, #desserts {
         width: 32%;
         float: left;
         padding-left: 15px;
