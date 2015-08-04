@@ -305,6 +305,11 @@ footer p {
         margin: auto;
     }
 
+    #content {
+        width: 95%;
+        margin: auto;
+    }
+
     #hours_contact, #dishofday {
         width: 50%;
         text-align: left;
@@ -312,7 +317,7 @@ footer p {
     }
 
     #appetizers, #entrees, #desserts {
-        width: 32%;
+        width: 33%;
         float: left;
         padding-left: 15px;
     }
@@ -335,11 +340,17 @@ footer p {
     }
 
     #dishofday_content {
+        width: 80%;
         padding: 5px;
+        margin: auto;
     }
 
     .quicklinks {
         display: none;
+    }
+
+    figure {
+        margin-top: 30px;
     }
 
     h2 {
