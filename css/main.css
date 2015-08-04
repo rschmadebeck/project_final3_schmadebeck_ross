@@ -270,6 +270,12 @@ footer p {
     background-repeat: no-repeat;
 }
 
+@media (min-width: 400px) {
+    h1 {
+        padding-top: 25px;
+    }
+}
+
 @media (min-width: 800px) {
 
     body {
