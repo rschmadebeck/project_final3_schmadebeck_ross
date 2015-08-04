@@ -206,7 +206,10 @@ figcaption {
     font-style: italic;
 }
 
-#hours_contact, #currentstatus, #dishofday, #reservations, #dishofday_content, #appetizers, #entrees, #desserts, #beverages {
+#hours_contact, #currentstatus, #dishofday,
+#reservations, #dishofday_content,
+#appetizers, #entrees, #desserts, #beverages,
+#newsitems, #events, #specials {
     text-align: center;
     padding: 10px;
 }
