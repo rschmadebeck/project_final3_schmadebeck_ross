@@ -185,9 +185,14 @@ section {
     margin-top: 5px;
 }
 
+figure {
+    padding-bottom: 15px;
+    clear: both;
+}
+
 figcaption {
     font-family: 'Lora', serif;
-    font-size: 10pt;
+    font-size: 12pt;
     text-align: left;
     color: #5F3309;
     line-height: 12pt;
@@ -218,17 +223,18 @@ figcaption {
     clear: both;
 }
 
+#reservations {
+    clear: both;
+}
+
 .news {
     width: 35%;
     margin: 5px;
+    margin-right: 10px;
     float: left;
 }
 
 #events, #specials {
-    clear: both;
-}
-
-figure {
     clear: both;
 }
 
@@ -288,12 +294,16 @@ footer p {
 
 @media (min-width: 400px) {
 
+    img {
+        width: 80%;
+    }
+
     h1 {
         padding-top: 25px;
     }
 
     h2 {
-        font-size: 20pt;
+        font-size: 28pt;
     }
 }
 
@@ -353,7 +363,12 @@ footer p {
         margin-top: 30px;
     }
 
+    img {
+        width: 100%;
+    }
+
     h2 {
+        font-size: 18pt;
         margin-bottom: 10px;
     }
 
@@ -362,7 +377,7 @@ footer p {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     h2 {
         font-size: 24pt;
     }
