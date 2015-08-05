@@ -332,6 +332,11 @@ footer p {
         padding-left: 15px;
     }
 
+    #beverages {
+        width: 80%;
+        margin: auto;
+    }
+
     #newsitems, #events, #specials {
         width: 33%;
         float: left;
