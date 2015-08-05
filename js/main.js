@@ -11,20 +11,17 @@ $.jvmobilemenu({
 
 $(window).resize(function (){
     var h = $('.hamburger');
+    var m = $('.mobile-menu');
     var width = $(window).width();
     var content = $('#content').width();
-    if (width >=800)
+    if (width >=800){
         h.css('right', (width - content)/2);
-    else
+        m.css('right', (width - content)/2);
+    }
+    else {
         h.css('right', 0);
-});
-
-$('.hamburger').click(function(){
-    var h = $('.hamburger');
-    if (h.hasClass('open'))
-        h.css('right',0);
-    else
-        $(window).resize();
+        m.css('right',0);
+    }
 });
 
 $(document).ready(function () { $(window).resize(); });
