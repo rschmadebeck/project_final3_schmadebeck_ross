@@ -116,6 +116,7 @@ h1 {
 
 .mobile-menu a {
     color: #FFFFFF;
+    overflow: hidden;
 }
 
 .mobile-menu .mobile-menu-inner {
