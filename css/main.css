@@ -294,6 +294,10 @@ footer p {
 
 @media (min-width: 400px) {
 
+    .logoimg {
+        width: 100%;
+    }
+
     img {
         width: 80%;
     }
